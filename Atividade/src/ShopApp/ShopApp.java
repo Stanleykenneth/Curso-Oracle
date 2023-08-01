@@ -39,6 +39,27 @@ public class ShopApp {
             System.out.println("Items " + item.getDescription());
 
         }
+        
+        int average = 0;               // Practice 7.1
+        int count = 0;
+        
+        for(Clothing item : c1.getItems()){
+            if(item.getSize().equals("L")){
+                 count++;
+                 average += item.getPrice(); 
+            }
+                  
+        }
+        try {
+            average = (count == 0) ? 0 : average/count;
+            average = average / count;
+            System.out.println("Average price " + average + ", Count " + count); // Pratictice 7.1
+            
+        } catch (ArithmeticException e) {
+            System.out.println("");
+            System.out.println("Não é possível dividir por zero");
+        }
+        
 
-    }
+     }
 }

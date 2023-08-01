@@ -14,9 +14,8 @@ public class Customer {
     public Customer(String name, int measurement) {
         this.name = name;
         setSize(measurement);
-        
-    }    
-    
+
+    }
 
     public void addItems(Clothing[] someItems) {
         items = someItems;
