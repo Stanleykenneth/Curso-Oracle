@@ -36,7 +36,7 @@ public class ShopApp {
         System.out.println("O nome do cliente é " + c1.getName() + ", " + ", seu tamanho é " + c1.getSize() + ", $" + c1.getTotalClothingCost() + ".");
 
         for (Clothing item : c1.getItems()) {
-            System.out.println("Items " + item.getDescription());
+            System.out.println("Item output " + item);
 
         }
         
